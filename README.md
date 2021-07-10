@@ -8,6 +8,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 * Editor Config
 * Prisma ORM
 * SQLite3
+* Ant Design
 
 
 ## Deploy on Vercel
