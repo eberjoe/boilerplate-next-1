@@ -1,8 +1,13 @@
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 import { Button } from 'antd';
+import { useState } from 'react';
+
+import { CreateModal } from '../components/CreateModal';
 
 export default function Home() {
+  const [createModalVisible, setCreateModalVisible] = useState(false);
+
   return (
     <div className={styles.container}>
       <Head>
@@ -15,7 +20,13 @@ export default function Home() {
         <h1>Gestão de Chamados de Suporte</h1>
       </header>
       <main className={styles.main}>
-        <Button type="primary">Criar um Chamado</Button>
+        <Button type="primary" onClick={() => setCreateModalVisible(true)}>
+          Criar um Chamado
+        </Button>
+        <CreateModal
+          visible={createModalVisible}
+          handleCancel={() => setCreateModalVisible(false)}
+        />
       </main>
 
       <footer className={styles.footer}>

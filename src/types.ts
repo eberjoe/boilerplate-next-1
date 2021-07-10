@@ -18,40 +18,41 @@ export type SupportTicket = {
   phone: string;
 };
 
-export const Locations: Record<string, Location> = {
-  BERLIN: {
-    cityName: 'Berlim',
-    countryName: 'Alemanha',
-    timezone: 'Europe/Berlin'
-  },
-  BOMBAY: {
+export const Locations = [
+  { cityName: 'Berlim', countryName: 'Alemanha', timezone: 'Europe/Berlin' },
+  {
     cityName: 'Bombaim',
     countryName: 'Índia',
     timezone: 'Asia/Kolkata'
   },
-  BOSTON: {
+  {
     cityName: 'Bostom',
     countryName: 'EUA',
     timezone: 'America/New_York'
   },
-  CHICAGO: {
+  {
     cityName: 'Chicago',
     countryName: 'EUA',
     timezone: 'America/Chicago'
   },
-  SAO_PAULO: {
+  {
     cityName: 'São Paulo',
     countryName: 'Brasil',
     timezone: 'America/Sao_Paulo'
   },
-  RIO: {
+  {
     cityName: 'Rio de Janeiro',
     countryName: 'Brasil',
     timezone: 'America/Sao_Paulo'
   },
-  MANCHESTER: {
+  {
     cityName: 'Manchester',
     countryName: 'Reino Unido',
     timezone: 'Europe/London'
+  },
+  {
+    cityName: 'Melbourne',
+    countryName: 'Australia',
+    timezone: 'Australia/Melbourne'
   }
-};
+];
