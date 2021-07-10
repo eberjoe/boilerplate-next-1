@@ -16,7 +16,10 @@ export const CreateModal = ({ visible, handleCancel }: CreateModalProps) => {
   return (
     <Modal
       visible={visible}
-      onCancel={handleCancel}
+      onCancel={() => {
+        handleCancel();
+        form.resetFields();
+      }}
       title="Novo Chamado"
       destroyOnClose
       maskClosable={false}
