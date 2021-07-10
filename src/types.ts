@@ -10,6 +10,14 @@ export type Location = {
   timezone: string;
 };
 
+export type SupportTicket = {
+  location: string;
+  start: string;
+  end: string;
+  type: SupportChannel;
+  phone: string;
+};
+
 export const Locations: Record<string, Location> = {
   BERLIN: {
     cityName: 'Berlim',
