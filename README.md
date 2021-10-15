@@ -10,9 +10,9 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 * SQLite3
 * Ant Design
 
-### To use
+### To use:
 
-yarn create next-app -e https://github.com/eberjoe/boilerplate-next-1
+`yarn create next-app -e https://github.com/eberjoe/boilerplate-next-1`
 
 
 ## Deploy on Vercel
